@@ -716,6 +716,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -787,6 +791,10 @@ video {
 
 .h-\[\] {
   height: ;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .w-1\/2 {
@@ -1442,6 +1450,11 @@ video {
   height: 700px;
 }
 
+.before\:h-\[600px\]::before {
+  content: var(--tw-content);
+  height: 600px;
+}
+
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
@@ -1477,6 +1490,20 @@ video {
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-blue-950:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-opacity-20:hover {
+  --tw-bg-opacity: 0.2;
 }
 
 .hover\:text-gray-300:hover {
@@ -1551,6 +1578,10 @@ video {
     width: 33.333333%;
   }
 
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1582,6 +1613,10 @@ video {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:py-20 {
@@ -1642,6 +1677,18 @@ video {
     height: fit-content;
   }
 
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[00px\] {
+    height: 00px;
+  }
+
   .lg\:w-\[300px\] {
     width: 300px;
   }
@@ -1686,6 +1733,10 @@ video {
 
   .lg\:p-16 {
     padding: 4rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-24 {
@@ -1746,6 +1797,22 @@ video {
 
   .xl\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .xl\:w-\[\] {
+    width: ;
+  }
+
+  .xl\:w-\[80\] {
+    width: 80;
+  }
+
+  .xl\:w-\[8\%\] {
+    width: 8%;
+  }
+
+  .xl\:w-\[85\%\] {
+    width: 85%;
   }
 
   .xl\:max-w-6xl {
@@ -1816,6 +1883,10 @@ video {
 
   .\32xl\:w-\[65\%\] {
     width: 65%;
+  }
+
+  .\32xl\:w-\[70\%\] {
+    width: 70%;
   }
 
   .\32xl\:p-10 {
