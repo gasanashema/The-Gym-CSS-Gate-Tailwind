@@ -644,8 +644,16 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
 .row-start-2 {
   grid-row-start: 2;
+}
+
+.float-start {
+  float: inline-start;
 }
 
 .m-1 {
@@ -730,6 +738,31 @@ video {
   margin-right: 1.5rem;
 }
 
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-\[300px\] {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.my-\[200px\] {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.my-\[250px\] {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.my-\[230px\] {
+  margin-top: 230px;
+  margin-bottom: 230px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -784,6 +817,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[230px\] {
+  margin-top: 230px;
 }
 
 .flex {
@@ -1237,8 +1274,24 @@ video {
   width: 40;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[6\] {
+  width: 6;
+}
+
+.w-\[65\] {
+  width: 65;
+}
+
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .grid-cols-2 {
@@ -1273,8 +1326,16 @@ video {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .content-between {
   align-content: space-between;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -1317,8 +1378,17 @@ video {
   gap: 1.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1540,6 +1610,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -1579,6 +1654,14 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-6 {
@@ -1744,6 +1827,16 @@ video {
 .py-\[\] {
   padding-top: ;
   padding-bottom: ;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .pb-5 {
@@ -2033,6 +2126,12 @@ video {
 .before\:rounded-lg::before {
   content: var(--tw-content);
   border-radius: 0.5rem;
+}
+
+.before\:bg-blue-700::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
 }
 
 .before\:bg-gradient-to-r::before {
