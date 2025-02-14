@@ -1,15 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Tailwind css gate</title>
     <link rel="stylesheet" href="../src/output.css">
+    <script src="https://kit.fontawesome.com/f3a3c85ffb.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <h1 class="text-5xl font-extrabold text-center text-red-500">Hello world</h1>
-    
+<body class="w-full">
+
+    <!-- main container -->
+    <div class="w-full h-[900px]  bg-cover bg-center before:bg-no-repeat before:bg-gradient-to-t before:from-[rgb(0,0,0,0.7)] before:to-[rgb(0,0,0,0.5)] before:absolute before:top-0 before:left-0 before:w-full before:h-[900px]  before:content-['']"
+        style="background-image: url(../images/avian-bird-flu.jpg);">
+        <!-- header -->
+        <header class="w-[70%] mx-auto py-6 border-b-2 border-white relative">
+            <div class="flex flex-row w-full justify-between">
+                <!-- logo container -->
+                <div class="w-[300px]">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="w-fit flex-col">
+                    <!-- upper -->
+                    <div class="flex items-center space-x-4 justify-end">
+                        <button class="text-white hover:text-gray-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2">
+                            Give to Penn
+                        </button>
+                    </div>
+                    <!-- lower -->
+                    <nav class="hidden md:flex space-x-6 text-sm uppercase text-white">
+                        <a href="#" class="hover:text-gray-300">Academics</a>
+                        <a href="#" class="hover:text-gray-300">Admissions & Aid</a>
+                        <a href="#" class="hover:text-gray-300">Athletics</a>
+                        <a href="#" class="hover:text-gray-300">Research & Innovation</a>
+                        <a href="#" class="hover:text-gray-300">Life at Penn</a>
+                        <a href="#" class="hover:text-gray-300">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="h-[700px] relative flex-col flex w-[70%] mx-auto justify-end ">
+            <div class=" mb-5 group space-y-6">
+                <h1 class="uppercase text-white">Health Sciences</h1>
+                <h1 class="text-4xl text-white">How Penn is helping with bird flu <br> research and disease surveillance
+                </h1>
+                <p class="text-white w-[45%] text-lg hidden group-hover:block">Faculty are working on a new vaccine for the H5N1 virus,
+                    studying its transmission, and helping the state test samples from birds and mammals.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-[65%] mx-auto py-20">
+        <!-- top -->
+         <div class="flex flex-row w-full justify-between items-end">
+             <h1 class="text-5xl">News</h1>
+             <div class="">
+                
+                 <select name="" id="" class="w-[200px] text-xl">
+                    <option value="" class="text-3xl">Featured</option>
+                    <option>Arts, Humanities, & Social Sciences</option>
+                    <option> Campus & Community</option>
+                    <option>Education, Business, & Law</option>
+                    <option>Health Sciences</option>
+                    <option>Science & Technology</option>
+                 </select>
+             </div>
+         </div>
+         <div class="grid grid-cols-2 mt-10">
+            <div class="flex flex-col border-x border-gray-400">
+                <img src="../images/pavilion-gift-teaser.jpg" class="mx-5" alt="">
+                <h1 class="text-center py-3 text-sm text-red-700">HEALTH SCIENCES</h1>
+                <h1 class="text-3xl px-5 text-center text-blue-900">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h1>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="flex flex-col ">
+                    <div class="mx-5 border-b border-b-gray-400 pb-5">
+                         <img src="../images/pavilion-gift-teaser.jpg" class="" alt="">
+                    <h1 class="text-center py-3 text-sm text-red-700">HEALTH SCIENCES</h1>
+                    <h1 class="text-sm px-5 text-center text-blue-900">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h1>
+                    </div>
+                   
+                </div>
+                <div class="flex flex-col border-x border-x-gray-400">
+                    <div class="mx-5 border-b border-b-gray-400 pb-5">
+                         <img src="../images/pavilion-gift-teaser.jpg" class="" alt="">
+                    <h1 class="text-center py-3 text-sm text-red-700">HEALTH SCIENCES</h1>
+                    <h1 class="text-sm px-5 text-center text-blue-900">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h1>
+                    </div>
+                   
+                </div>
+                <div class="flex flex-col ">
+                    <div class="mx-5 border-b border-b-gray-400 py-5 mb-5">
+                         <img src="../images/pavilion-gift-teaser.jpg" class="" alt="">
+                    <h1 class="text-center py-3 text-sm text-red-700">HEALTH SCIENCES</h1>
+                    <h1 class="text-sm px-5 text-center text-blue-900">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h1>
+                    </div>
+                   
+                </div>
+                <div class="flex flex-col py-5 mb-5 border-x border-x-gray-400">
+                    <div class="mx-5 border-b border-b-gray-400 pb-5">
+                         <img src="../images/pavilion-gift-teaser.jpg" class="" alt="">
+                    <h1 class="text-center py-3 text-sm text-red-700">HEALTH SCIENCES</h1>
+                    <h1 class="text-sm px-5 text-center text-blue-900">Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine</h1>
+                    </div>
+                   
+                </div>
+                
+                
+            </div>
+         </div>
+    </div>
 </body>
+
 </html>
