@@ -16,7 +16,7 @@
     <div class="w-full h-[900px]  bg-cover bg-center before:bg-no-repeat before:bg-gradient-to-t before:from-[rgb(0,0,0,0.7)] before:to-[rgb(0,0,0,0.5)] before:absolute before:top-0 before:left-0 before:w-full before:h-[900px]  before:content-['']"
         style="background-image: url(../images/avian-bird-flu.jpg);">
         <!-- header -->
-        <header class="w-[70%] mx-auto py-6 border-b-2 border-white relative">
+        <header class="w-[70%] mx-auto py-6  relative">
             <div class="flex flex-row w-full justify-between">
                 <!-- logo container -->
                 <div class="w-[300px]">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="w-fit flex-col">
                     <!-- upper -->
-                    <div class="flex items-center space-x-4 justify-end">
+                    <div class="flex items-center space-x-4 justify-end ">
                         <button class="text-white hover:text-gray-300">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -36,14 +36,15 @@
                             Give to Penn
                         </button>
                     </div>
+                    <div class="w-full h-px border-t border-t-gray-400"></div>
                     <!-- lower -->
-                    <nav class="hidden md:flex space-x-6 text-sm uppercase text-white">
-                        <a href="#" class="hover:text-gray-300">Academics</a>
-                        <a href="#" class="hover:text-gray-300">Admissions & Aid</a>
-                        <a href="#" class="hover:text-gray-300">Athletics</a>
-                        <a href="#" class="hover:text-gray-300">Research & Innovation</a>
-                        <a href="#" class="hover:text-gray-300">Life at Penn</a>
-                        <a href="#" class="hover:text-gray-300">About</a>
+                    <nav class="hidden md:flex space-x-6 font-semibold text-sm pt-2 uppercase text-white">
+                        <a href="#" class="hover:text-gray-300">Academics <i class="fa-solid fa-angle-down"></i></a> <span class="text-gray-500">/</span>
+                        <a href="#" class="hover:text-gray-300">Admissions & Aid <i class="fa-solid fa-angle-down"></i></a><span class="text-gray-500">/</span>
+                        <a href="#" class="hover:text-gray-300">Athletics <i class="fa-solid fa-angle-down"></i></a><span class="text-gray-500">/</span>
+                        <a href="#" class="hover:text-gray-300">Research & Innovation <i class="fa-solid fa-angle-down"></i></a><span class="text-gray-500">/</span>
+                        <a href="#" class="hover:text-gray-300">Life at Penn <i class="fa-solid fa-angle-down"></i></a><span class="text-gray-500">/</span>
+                        <a href="#" class="hover:text-gray-300">About <i class="fa-solid fa-angle-down"></i></a>
                     </nav>
                 </div>
             </div>
@@ -354,13 +355,71 @@
         </div>
     </div>
 
-    <div class="w-full h-[900px]  bg-cover bg-center before:bg-no-repeat bg-blue-800" style="background-image: url(../images/footer-16.png);">
-       
-        .grid
+    <footer class="relative bg-cover bg-center bg-no-repeat bg-blue-900 p-20" style="background-image: url('../images/footer-16.png');">
+      
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-start">
+            
+            <!-- Left Section -->
+            <div class="space-y-8 text-white font-light">
+                <img src="../images/logo.svg" 
+                     alt="Penn Logo" class="w-40">
+                <p>Philadelphia, PA 19104</p>
+                <p><span class="font-semibold">Telephone:</span> (215) 898-5000</p>
 
+                <ul class="space-y-6">
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">Maps</a></li>
+                    <li><a href="#" class="hover:underline">Parking</a></li>
+                </ul>
+            </div>
 
+            <!-- Center Section  -->
+            <div class="space-y-8 text-white">
+                <h3 class="font-semibold uppercase text-xl">Navigate</h3>
+                <ul class="space-y-6 font-light">
+                    <li><a href="#" class="hover:underline">Alumni</a></li>
+                    <li><a href="#" class="hover:underline">Athletics</a></li>
+                    <li><a href="#" class="hover:underline">Diversity</a></li>
+                    <li><a href="#" class="hover:underline">Health Care</a></li>
+                    <li><a href="#" class="hover:underline">Libraries</a></li>
+                    <li><a href="#" class="hover:underline">Online Learning</a></li>
+                    <li><a href="#" class="hover:underline">Penn Global</a></li>
+                </ul>
+            </div>
 
-    </div>
+            <!-- Right Section  -->
+            <div class="max-w-sm text-white font-light flex flex-col">
+                <h3 class=" font-semibold text-xl">Penn's Heritage</h3>
+                <p class="text-white text-sm mt-2 leading-relaxed"> <i> As America's first university, Penn has a history that dates back to 1740 and shares many ties 
+                    with the colonial city of Philadelphia and the birth of our nation.</i>
+                   
+                </p>
+                
+                <a href="#" 
+                class="text-xs mt-10 font-semibold px-10 py-5 rounded-full border border-gray-500 uppercase text-white w-fit">Our History</a>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="relative z-10 w-[60%] mx-auto text-center py-4 border-t border-white border-opacity-30 flex flex-row justify-between">
+            <div class="mt-4 flex flex-row space-x-2 items-center justify-center text-white group">
+                <button class="border border-white px-4 py-2 flex items-center mx-auto group-hover:bg-white group-hover:bg-opacity-20">
+                    <span class="">↑</span> 
+                </button>
+                <span>Back to Top</span>
+            </div>
+            <div class="flex flex-wrap justify-center space-x-4 text-sm text-gray-300 w-[50%]">
+                <a href="#" class="hover:underline">Disclaimer</a>
+                <a href="#" class="hover:underline">Emergency Services</a>
+                <a href="#" class="hover:underline">Nondiscrimination</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Report Accessibility Issues</a>
+                <a href="#" class="hover:underline">Report Copyright Infringement</a>
+            </div>
+            
+        </div>
+    </footer>
 
 </body>
 
